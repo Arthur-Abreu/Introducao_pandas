@@ -1,0 +1,7 @@
+id_pedido,vendedor,regiao,valor_venda,desconto,status,mes,valor_liquido,comissao
+001,Ana,Sul,1000.0,100.0,Concluido,Jan,900.0,45.0
+002,Ana,Sul,1500.0,0.0,Concluido,Fev,1500.0,75.0
+003,Bruno,Sudeste,2000.0,150.0,Concluido,Jan,1850.0,92.5
+005,Carlos,Sul,1800.0,0.0,Concluido,Jan,1800.0,90.0
+006,Carlos,Sul,900.0,50.0,Concluido,Fev,850.0,42.5
+008,Ana,Sul,1300.0,130.0,Concluido,Mar,1170.0,58.5
