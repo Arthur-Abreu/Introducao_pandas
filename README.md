@@ -1,49 +1,38 @@
-# 📊 Pipeline de Tratamento e Análise de Vendas com Pandas
+# 📊 Dashboard de Performance Comercial & Pipeline de ETL Moderna 🦆
 
-Este projeto é um script de teste prático utilizando a biblioteca **Pandas** para simular um fluxo real de engenharia e análise de dados (ETL). O script recebe uma base de dados bruta de vendas, realiza a limpeza e o tratamento dos dados, calcula métricas de negócio (KPIs) e exporta os resultados tratados.
+Um projeto de análise de dados ponta a ponta (End-to-End) que une uma pipeline de ETL de alta performance em Python a um **Dashboard interativo e moderno no Power BI**.
 
-## 🚀 Funcionalidades do Script
-
-O script simula as seguintes etapas de um pipeline de dados:
-
-1. **Limpeza e Tratamento de Dados (Data Cleaning):**
-   - Substituição de vendedores nulos por "Não identificado" (garantindo rastreabilidade).
-   - Conversão segura de colunas de texto/mistas para números (`valor_venda` e `desconto`).
-   - Tratamento de valores inválidos ou vazios (`NaN`), substituindo-os por `0`.
-   - Filtragem ativa para analisar apenas vendas com status **"Concluido"**.
-
-2. **Transformação de Dados:**
-   - Criação da métrica de **Valor Líquido** (Valor Bruto - Desconto).
-   - Cálculo automático de **Comissão** comercial (5% sobre o valor líquido).
-
-3. **Cálculo de KPIs (Métricas de Negócio):**
-   - Receita líquida total por vendedor.
-   - Receita líquida total por região geográfica (Sul e Sudeste).
-   - Ticket médio por vendedor.
-   - Ranking de performance de vendedores em ordem decrescente.
-   - Faturamento líquido mensal.
-
-4. **Exportação de Resultados:**
-   - O script gera automaticamente 3 arquivos de saída para consumo de outras equipes ou ferramentas de BI (como Power BI ou Tableau):
-     - `vendas_tratadas.csv`
-     - `ranking_vendedor.csv`
-     - `receita_mensal.csv`
+O projeto realiza a ingestão de dados transacionais brutos de vendas, aplica regras de negócio e limpeza de dados (Arquitetura Medallion), calcula Indicadores-Chave de Desempenho (KPIs) e exporta arquivos otimizados para consumo de negócios e integração de BI.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🎨 Dashboard no Power BI
 
-- **Python 3.x**
-- **Pandas** (Tratamento e análise dos dados)
-- **Openpyxl** (Suporte para manipulação de arquivos Excel)
+Abaixo está uma prévia do painel analítico interativo desenvolvido para monitorar os resultados comerciais:
+
+> 💡 **Dica:** Adicione um print do seu dashboard escuro aqui! 
+> Basta salvar a imagem dentro do seu repositório (ex: em uma pasta chamada `imagens/`) e apontar o link abaixo:
+> `![Dashboard de Performance Comercial](imagens/dashboard_screenshot.png)`
+
+### Principais Indicadores do Painel:
+*   **Receita Líquida Total (Faturamento - Descontos):** R$ 8,07 Mil
+*   **Ticket Médio por Venda:** R$ 1,35 Mil
+*   **Total de Comissões Distribuídas (5%):** R$ 403,50
+*   **Performance Mensal e Regional:** Filtros dinâmicos por Vendedor (Ana, Bruno, Carlos) e por Região (Sul, Sudeste).
 
 ---
 
-## 💻 Como Executar o Projeto
+## 📂 Estrutura do Repositório e dos Códigos
 
-### Prerrequisitos
+O código foi estruturado de forma organizada para separar o ambiente de validação inicial da pipeline final de produção:
 
-Antes de rodar o script, você precisa ter o Python instalado e as bibliotecas do projeto. Você pode instalá-las rodando o comando abaixo no seu terminal:
-
-```bash
-pip install pandas openpyxl
+```text
+├── data/
+│   ├── gold_vendas_tratadas.parquet    # Arquivo colunar otimizado para o Power BI
+│   └── relatorio_comercial_kpis.xlsx   # Relatório Excel multi-abas para a diretoria
+├── src/
+│   ├── teste_pandas.py                 # Script de testes e prototipação de KPIs
+│   └── main.py                         # Pipeline de ETL de produção (Exportação via DuckDB)
+├── .gitignore
+├── README.md
+└── requirements.txt
