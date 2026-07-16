@@ -1,3 +1,4 @@
+
 1. main.py (Pipeline de Dados Otimizado para Produção)
 Uma evolução do script inicial, focada em automação, performance e entrega corporativa de alta maturidade:
 
@@ -35,9 +36,8 @@ Exportação Inicial: Gera arquivos CSVs isolados para auditoria rápida (vendas
 Dashboard de Performance Comercial (dashboard.png)
 
 Dashboard de Performance Comercial
-<img width="1315" height="736" alt="image" src="https://github.com/user-attachments/assets/c45d27e5-4501-4e85-adb4-94e45d63bc6f" />
 
-## 📊 Dashboard de Performance Comercial (Power BI)
+<img width="1315" height="736" alt="image" src="https://github.com/user-attachments/assets/c45d27e5-4501-4e85-adb4-94e45d63bc6f" />
 
 O resultado final do pipeline é exposto em um painel executivo moderno e interativo, projetado para apoiar a tomada de decisão rápida e estratégica da liderança comercial.
 
