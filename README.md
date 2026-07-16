@@ -1,5 +1,4 @@
-
-1. main.py (Pipeline de Dados Otimizado para Produção)
+1 - main.py (Pipeline de Dados Otimizado para Produção)
 Uma evolução do script inicial, focada em automação, performance e entrega corporativa de alta maturidade:
 
 Persistência Analítica (Parquet): Utiliza o DuckDB para exportar de forma ultraveloz a base tratada da camada Silver em formato Parquet (data/gold_vendas_tratadas.parquet). O formato colunar garante máxima compactação, velocidade de leitura para o BI e preservação nativa dos tipos de dados.
@@ -17,7 +16,7 @@ Carga Centralizada em Excel (Multi-abas): Utiliza o motor do openpyxl para conso
 💻 Estrutura de Código: Script a Script
 O projeto é modularizado em dois scripts principais que mostram a evolução desde a análise exploratória até o pipeline estruturado em produção:
 
-2. teste_pandas.py (Análise Exploratória e Exploração de KPIs)
+2 - teste_pandas.py (Análise Exploratória e Exploração de KPIs)
 Focado no tratamento inicial dos dados utilizando Pandas. É o script ideal para homologação rápida de regras de negócio.
 
 Limpeza de Nulos: Identificação de vendedores ausentes (atribuindo "Não identificado" para rastreabilidade) e preenchimento de valores monetários nulos com 0.
