@@ -90,7 +90,7 @@ print("-"*90)
 print("Receita líquida mensal:")
 print(receita_mes)
 
-df_concluidas.to_csv("vendas_tratadas.csv", index=False)
+"""df_concluidas.to_csv("vendas_tratadas.csv", index=False)
 ranking_vendedores.to_csv("ranking_vendedor.csv", index=False)
-receita_mes.to_csv("receita_mensal.csv", index=False)
+receita_mes.to_csv("receita_mensal.csv", index=False)"""
 
