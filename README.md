@@ -16,6 +16,8 @@ Carga Centralizada em Excel (Multi-abas): Utiliza o motor do openpyxl para conso
 💻 Estrutura de Código: Script a Script
 O projeto é modularizado em dois scripts principais que mostram a evolução desde a análise exploratória até o pipeline estruturado em produção:
 
+
+
 2 - teste_pandas.py (Análise Exploratória e Exploração de KPIs)
 Focado no tratamento inicial dos dados utilizando Pandas. É o script ideal para homologação rápida de regras de negócio.
 
@@ -30,6 +32,8 @@ Valor Líquido = Valor Venda - Desconto
 Comissão = Valor Líquido * 5%
 
 Exportação Inicial: Gera arquivos CSVs isolados para auditoria rápida (vendas_tratadas.csv, ranking_vendedor.csv, receita_mensal.csv).
+
+
 
 📈 Integração e Relatório no Power BI
 Dashboard de Performance Comercial (dashboard.png)
